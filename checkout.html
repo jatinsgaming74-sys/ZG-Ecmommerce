@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+  <title>
+   Checkout - ZG
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header id="header">
+   <a href="index.html">
+    <img alt="ZG Logo" class="logo" src="l.png"/>
+   </a>
+   <div>
+    <ul id="navbar">
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="shop.html">
+       Shop
+      </a>
+     </li>
+     <li>
+      <a href="blog.html">
+       Blog
+      </a>
+     </li>
+     <li>
+      <a href="about.html">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="contact.html">
+       Contact
+      </a>
+     </li>
+     <li id="lg-bag">
+      <a class="active" href="cart.html">
+       <i class="fa-solid fa-bag-shopping">
+       </i>
+      </a>
+     </li>
+     <a href="#" id="close">
+      <i class="fa-solid fa-xmark">
+      </i>
+     </a>
+    </ul>
+   </div>
+   <div id="mobile">
+    <a href="cart.html">
+     <i class="fa-solid fa-bag-shopping">
+     </i>
+    </a>
+    <i class="fas fa-outdent" id="bar">
+    </i>
+   </div>
+  </header>
+  <section id="page-header">
+   <h2>
+    #Checkout
+   </h2>
+   <p>
+    Enter your details and select a payment method
+   </p>
+  </section>
+  <section class="section-p1" id="checkout-page">
+   <form id="checkoutForm">
+    <h3>
+     Billing Details
+    </h3>
+    <input placeholder="Full Name" required="" type="text"/>
+    <input placeholder="Email Address" required="" type="email"/>
+    <input placeholder="Phone Number" required="" type="tel"/>
+    <input placeholder="Address" required="" type="text"/>
+    <input placeholder="City" required="" type="text"/>
+    <input placeholder="Postal Code" required="" type="text"/>
+    <h3>
+     Payment Method
+    </h3>
+    <div id="payment-methods">
+     <label class="payment-option">
+      <input name="payment" type="radio" value="upi"/>
+      UPI
+     </label>
+     <label class="payment-option">
+      <input name="payment" type="radio" value="card"/>
+      Card
+     </label>
+     <label class="payment-option">
+      <input name="payment" type="radio" value="cod"/>
+      Cash on Delivery
+     </label>
+    </div>
+    <div class="payment-box" id="upiBox">
+     <h4>
+      UPI Payment
+     </h4>
+     <input pattern=".+@.+" placeholder="Enter UPI ID" title="Example: name@upi" type="text"/>
+    </div>
+    <div class="payment-box" id="cardBox">
+     <h4>
+      Card Payment
+     </h4>
+     <input inputmode="numeric" maxlength="19" minlength="12" placeholder="Card Number" type="text"/>
+     <input placeholder="Card Holder Name" type="text"/>
+     <input placeholder="MM/YY" type="text"/>
+     <input inputmode="numeric" maxlength="4" placeholder="CVV" type="password"/>
+    </div>
+    <div class="payment-box" id="codBox">
+     <h4>
+      Cash on Delivery
+     </h4>
+     <p>
+      Pay when your order is delivered.
+     </p>
+    </div>
+    <button id="placeOrder" type="submit">
+     Place Order
+    </button>
+   </form>
+   <div id="order-summary">
+    <h3>
+     Order Summary
+    </h3>
+    <table>
+     <tr>
+      <td>
+       Subtotal
+      </td>
+      <td id="checkoutSubtotal">
+       ₹0.00
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Shipping
+      </td>
+      <td id="checkoutShipping">
+       ₹0.00
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Total
+       </strong>
+      </td>
+      <td>
+       <strong id="checkoutTotal">
+        ₹0.00
+       </strong>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </section>
+  <section id="payment-success">
+   <i class="fa-solid fa-circle-check">
+   </i>
+   <h2>
+    Order Placed Successfully!
+   </h2>
+   <p>
+    Your demo order number is
+    <strong id="orderNumber">
+    </strong>
+    .
+   </p>
+   <p>
+    Thank you for shopping with ZG.
+   </p>
+   <a class="normal" href="shop.html" style="display:inline-block;background:#088178;color:#fff;text-decoration:none;padding:12px 20px;border-radius:4px;">
+    Continue Shopping
+   </a>
+  </section>
+  <footer class="section-p1">
+   <div class="col">
+    <img alt="ZG Logo" class="logo" src="l.png"/>
+    <h4>
+     Contact
+    </h4>
+    <p>
+     <strong>
+      Address:
+     </strong>
+     189 Wellington Road, Street 32, San Francisco
+    </p>
+    <p>
+     <strong>
+      Phone:
+     </strong>
+     +91 22222 55555
+    </p>
+    <p>
+     <strong>
+      Hours:
+     </strong>
+     10:00 - 18:00, Mon - Sat
+    </p>
+   </div>
+   <div class="col">
+    <h4>
+     About
+    </h4>
+    <a href="about.html">
+     About us
+    </a>
+    <a href="contact.html">
+     Contact us
+    </a>
+   </div>
+   <div class="col">
+    <h4>
+     My Account
+    </h4>
+    <a href="cart.html">
+     View Cart
+    </a>
+   </div>
+   <div class="copyright">
+    <p>
+     &copy; 2026, ZG etc
+    </p>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>

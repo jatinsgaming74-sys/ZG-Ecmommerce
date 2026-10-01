@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Shopping Cart - ZG
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header id="header">
+   <a href="index.html">
+    <img alt="ZG Logo" class="logo" src="l.png"/>
+   </a>
+   <div>
+    <ul id="navbar">
+     <li>
+      <a href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="shop.html">
+       Shop
+      </a>
+     </li>
+     <li>
+      <a href="blog.html">
+       Blog
+      </a>
+     </li>
+     <li>
+      <a href="about.html">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="contact.html">
+       Contact
+      </a>
+     </li>
+     <li id="lg-bag">
+      <a class="active" href="cart.html">
+       <i class="fa-solid fa-bag-shopping">
+       </i>
+      </a>
+     </li>
+     <a href="#" id="close">
+      <i class="fa-solid fa-xmark">
+      </i>
+     </a>
+    </ul>
+   </div>
+   <div id="mobile">
+    <a href="cart.html">
+     <i class="fa-solid fa-bag-shopping">
+     </i>
+    </a>
+    <i class="fas fa-outdent" id="bar">
+    </i>
+   </div>
+  </header>
+  <section id="page-header">
+   <h2>
+    #Cart
+   </h2>
+   <p>
+    Review your selected products
+   </p>
+  </section>
+  <section class="section-p1" id="cart">
+   <table>
+    <thead>
+     <tr>
+      <td>
+       Remove
+      </td>
+      <td>
+       Image
+      </td>
+      <td>
+       Product
+      </td>
+      <td>
+       Price
+      </td>
+      <td>
+       Quantity
+      </td>
+      <td>
+       Subtotal
+      </td>
+     </tr>
+    </thead>
+    <tbody id="cartBody">
+    </tbody>
+   </table>
+   <div id="cart-empty" style="display:none">
+    <h2>
+     Your cart is empty
+    </h2>
+    <p>
+     Add a product from the shop to see it here.
+    </p>
+    <a href="shop.html">
+     Continue Shopping
+    </a>
+   </div>
+  </section>
+  <section class="section-p1" id="cart-add">
+   <div id="coupon">
+    <h3>
+     Apply Coupon
+    </h3>
+    <input id="couponCode" placeholder="Enter Your Coupon" type="text"/>
+    <button id="applyCoupon" type="button">
+     Apply
+    </button>
+    <p id="couponMessage">
+    </p>
+   </div>
+   <div id="subtotal">
+    <h3>
+     Cart Totals
+    </h3>
+    <table>
+     <tr>
+      <td>
+       Cart Subtotal
+      </td>
+      <td id="cartSubtotal">
+       ₹0.00
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Shipping
+      </td>
+      <td id="shipping">
+       ₹0.00
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Total
+       </strong>
+      </td>
+      <td>
+       <strong id="cartTotal">
+        ₹0.00
+       </strong>
+      </td>
+     </tr>
+    </table>
+    <button id="checkoutBtn" type="button">
+     Proceed to Checkout
+    </button>
+   </div>
+  </section>
+  <section class="section-p1" id="newsletter">
+   <div class="newstext">
+    <h4>
+     Sign up For Newsletters
+    </h4>
+    <p>
+     Get E-mail updates about our latest shop and
+     <span>
+      special offers.
+     </span>
+    </p>
+   </div>
+   <div class="form">
+    <input placeholder="Your email address" type="email"/>
+    <button class="normal" type="button">
+     Sign Up
+    </button>
+   </div>
+  </section>
+  <footer class="section-p1">
+   <div class="col">
+    <img alt="ZG Logo" class="logo" src="l.png"/>
+    <h4>
+     Contact
+    </h4>
+    <p>
+     <strong>
+      Address:
+     </strong>
+     189 Wellington Road, Street 32, San Francisco
+    </p>
+    <p>
+     <strong>
+      Phone:
+     </strong>
+     +91 22222 55555
+    </p>
+    <p>
+     <strong>
+      Hours:
+     </strong>
+     10:00 - 18:00, Mon - Sat
+    </p>
+    <div class="follow">
+     <h4>
+      Follow us
+     </h4>
+     <div class="icon">
+      <i class="fab fa-facebook-f">
+      </i>
+      <i class="fab fa-twitter">
+      </i>
+      <i class="fab fa-instagram">
+      </i>
+      <i class="fab fa-pinterest-p">
+      </i>
+      <i class="fab fa-youtube">
+      </i>
+     </div>
+    </div>
+   </div>
+   <div class="col">
+    <h4>
+     About
+    </h4>
+    <a href="about.html">
+     About us
+    </a>
+    <a href="#">
+     Delivery Information
+    </a>
+    <a href="#">
+     Privacy policy
+    </a>
+    <a href="#">
+     Terms &amp; Condition
+    </a>
+    <a href="contact.html">
+     Contact us
+    </a>
+   </div>
+   <div class="col">
+    <h4>
+     My Account
+    </h4>
+    <a href="#">
+     Sign In
+    </a>
+    <a href="cart.html">
+     View Cart
+    </a>
+    <a href="#">
+     My wishlist
+    </a>
+    <a href="#">
+     Track My Order
+    </a>
+    <a href="contact.html">
+     Help
+    </a>
+   </div>
+   <div class="col install">
+    <h4>
+     Install App
+    </h4>
+    <p>
+     From App Store or Google Play
+    </p>
+    <div class="row">
+     <img alt="" src="AL-removebg-preview.png"/>
+    </div>
+    <p>
+     Secured Payment Gateways
+    </p>
+    <img alt="" src="pay-removebg-preview.png"/>
+   </div>
+   <div class="copyright">
+    <p>
+     &copy; 2026, ZG etc
+    </p>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
